@@ -23,8 +23,8 @@
     z-index: 1000;
     opacity: 1;
     visibility: visible;
-    animation: fadeOut 3s forwards; 
-    animation-delay: 5s; 
+    animation: fadeOut 1s forwards; 
+    animation-delay: 2s; 
 }
   
 #loader h1 {
@@ -136,20 +136,17 @@ main {
     animation: fadeInUp 0.8s ease forwards;
 }
 
-
 .about-img:hover {
     transform: scale(1.1); 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     filter: brightness(1.1);
 }
 
-
 .about ul {
     list-style-type: disc;
     margin-left: 20px;
     padding-left: 20px;
 }
-
 
 footer p {
     font-size: 0.9em;
@@ -169,7 +166,6 @@ footer p {
         font-size: 1.5em;
     }
 }
-
 
 @keyframes fadeIn {
     0% { opacity: 0; }
