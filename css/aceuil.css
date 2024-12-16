@@ -11,8 +11,7 @@
     --loader-color: rgb(9, 2, 32);
 }
 
-
-#loader {
+#chargement {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,29 +24,29 @@
     z-index: 1000;
     opacity: 1;
     visibility: visible;
-    animation: fadeOut 3s forwards; 
+    animation: disparaitre 3s forwards; 
     animation-delay: 5s;
 }
 
-#loader h1 {
+#chargement h1 {
     color: var(--secondary-color);
     font-size: 2rem;
 }
 
-#loader h1 span {
+#chargement h1 span {
     display: inline-block;
-    animation: bounce 2s infinite;
+    animation: rebondir 2s infinite;
 }
 
-#loader h1 span:nth-child(1) {
+#chargement h1 span:nth-child(1) {
     animation-delay: 0s;
 }
 
-#loader h1 span:nth-child(2) {
+#chargement h1 span:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-#loader h1 span:nth-child(3) {
+#chargement h1 span:nth-child(3) {
     animation-delay: 0.4s;
 }
 
@@ -58,19 +57,19 @@ body {
     background-color: #f9f9f9;
 }
 
-header {
+entete {
     background-color: #003057;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
-header .logo img {
+.entete .logo img {
     height: 60px;
     transition: transform 0.3s ease;
 }
 
-header .logo img:hover {
+.entete .logo img:hover {
     transform: scale(1.1);
 }
 
@@ -94,7 +93,7 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
-.hero {
+.bannière {
     position: relative;
     width: 100%;
     height: 80vh;
@@ -104,14 +103,14 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-.hero .slider {
+.bannière .diaporama {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.hero .slide {
+.bannière .diapositive {
     position: absolute;
     top: 0;
     left: 0;
@@ -119,28 +118,28 @@ nav ul li a:hover {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    animation: slideAnimation 12s infinite;
+    animation: animationDiapo 12s infinite;
 }
 
-.hero .slide:nth-child(1) {
+.bannière .diapositive:nth-child(1) {
     animation-delay: 0s;
 }
 
-.hero .slide:nth-child(2) {
+.bannière .diapositive:nth-child(2) {
     animation-delay: 4s;
 }
 
-.hero .slide:nth-child(3) {
+.bannière .diapositive:nth-child(3) {
     animation-delay: 8s;
 }
 
-.hero .slider-image {
+.bannière .image-diapo {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.hero .overlay {
+.bannière .superposition {
     position: absolute;
     bottom: 10%;
     left: 5%;
@@ -148,18 +147,18 @@ nav ul li a:hover {
     max-width: 600px;
 }
 
-.hero h1 {
+.bannière h1 {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 0.5em;
 }
 
-.hero p {
+.bannière p {
     font-size: 1.2em;
     margin-bottom: 1em;
 }
 
-.hero .btn-primary {
+.bannière .btn-principal {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
@@ -170,30 +169,30 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.hero .btn-primary:hover {
+.bannière .btn-principal:hover {
     background-color: #ffa500;
 }
 
-.models {
+.modeles {
     padding: 50px 5%;
     background-color: #f4f4f4;
     text-align: center;
 }
 
-.models h2 {
+.modeles h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     color: #003057;
 }
 
-.models .models-list {
+.modeles .liste-modeles {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.model-card {
+.carton-modele {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -202,29 +201,29 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.model-card:hover {
+.carton-modele:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.model-card img {
+.carton-modele img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.model-card h3 {
+.carton-modele h3 {
     font-size: 1.8em;
     margin: 15px 0;
     color: #003057;
 }
 
-.model-card p {
+.carton-modele p {
     font-size: 1.2em;
     color: #555;
 }
 
-.model-card .btn-secondary {
+.carton-modele .btn-secondaire {
     display: inline-block;
     padding: 10px 20px;
     background-color: #003057;
@@ -236,36 +235,35 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-
-.news {
+.actualites {
     padding: 50px 5%;
     background-color: #fff;
     text-align: center;
 }
 
-.news h2 {
+.actualites h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     color: #003057;
 }
 
-.news-item {
+.actualite {
     margin-bottom: 30px;
 }
 
-.news-item h3 {
+.actualite h3 {
     font-size: 2em;
     color: #003057;
     margin-bottom: 10px;
 }
 
-.news-item p {
+.actualite p {
     font-size: 1.2em;
     color: #555;
     margin-bottom: 15px;
 }
 
-.news-item .btn-primary {
+.actualite .btn-principal {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
@@ -276,12 +274,11 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.news-item .btn-primary:hover {
+.actualite .btn-principal:hover {
     background-color: #ffa500;
 }
 
-
-footer {
+pied-de-page {
     background-color: #003057;
     color: #fff;
     text-align: center;
@@ -289,69 +286,69 @@ footer {
     font-size: 1.2em;
 }
 
-footer p {
+pied-de-page p {
     margin: 0;
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
+    .bannière h1 {
         font-size: 2.5em;
     }
 
-    .hero p {
+    .bannière p {
         font-size: 1em;
     }
 
-    .model-card {
+    .carton-modele {
         width: 90%;
         margin-bottom: 20px;
     }
 
-    .models-list {
+    .liste-modeles {
         flex-direction: column;
         align-items: center;
     }
 
-    .models h2 {
+    .modeles h2 {
         font-size: 2em;
     }
 
-    .news h2 {
+    .actualites h2 {
         font-size: 2em;
     }
 
-    .news-item h3 {
+    .actualite h3 {
         font-size: 1.5em;
     }
 }
 
 @media (max-width: 480px) {
-    .hero h1 {
+    .bannière h1 {
         font-size: 2em;
     }
 
-    .hero p {
+    .bannière p {
         font-size: 0.9em;
     }
 
-    .model-card {
+    .carton-modele {
         width: 100%;
     }
 
-    .models h2 {
+    .modeles h2 {
         font-size: 1.8em;
     }
 
-    .news h2 {
+    .actualites h2 {
         font-size: 1.8em;
     }
 
-    .news-item h3 {
+    .actualite h3 {
         font-size: 1.3em;
     }
 }
 
-@keyframes fadeOut {
+@keyframes disparaitre {
     0% {
         opacity: 1;
         visibility: visible;
@@ -362,7 +359,7 @@ footer p {
     }
 }
 
-@keyframes bounce {
+@keyframes rebondir {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
@@ -374,7 +371,7 @@ footer p {
     }
 }
 
-@keyframes slideAnimation {
+@keyframes animationDiapo {
     0% {
         opacity: 0;
     }
